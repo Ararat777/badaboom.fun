@@ -1,5 +1,5 @@
 <header>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-md-2">
         <div class="logo">
@@ -94,32 +94,48 @@
         </div>
       </div>
     </div>
-    <div class="gallery-box">
-      <div class="gallery-bg">
-        <%= image_tag "/assets/gallery_bg.png", class: 'img-fluid' %>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center author-text">
-          <span class="title"></span>
-          <p class="description"></p>
-          <span class="name"></span>
-        </div>
-      </div>
-      <div class="images-row">
-        <div class="image">
-          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
-        </div>
-        <div class="image">
-          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
-        </div>
-        <div class="image">
-          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
-        </div>
-        <div class="image">
-          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
-        </div>
-        <div class="image">
-          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gallery-box">
+          <div class="gallery-bg">
+            <%= image_tag "/assets/gallery_bg.png", class: 'img-fluid' %>
+          </div>
+          <div class="row">
+            <div class="col-md-6 offset-md-3 text-center author-text">
+              <span class="title"></span>
+              <p class="description"></p>
+              <span class="name"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 offset-md-2 about">
+              <h2 class="about-title text-center">About App</h2>
+              <p class="about-project">
+                Lorem ipsum dolor sit amet, sea ex erat diceret efficiantur. Adipiscing scribentur pri no, sea bonorum sententiae in. Ne alii eius consectetuer mei. Eu mei indoctum democritum omittantur, vis harum expetendis posidonium eu. Ex per enim nonumes. Ubique veritus ea eam.
+                Lorem ipsum dolor sit amet, sea ex erat diceret efficiantur. Adipiscing scribentur pri no, sea bonorum sententiae in. Ne alii eius consectetuer mei. Eu mei indoctum democritum omittantur, vis harum expetendis posidonium eu. Ex per enim nonumes. Ubique veritus ea eam.
+                Lorem ipsum dolor sit amet, sea ex erat diceret efficiantur. Adipiscing scribentur pri no, sea bonorum sententiae in. Ne alii eius consectetuer mei. Eu mei indoctum democritum omittantur, vis harum expetendis posidonium eu. Ex per enim nonumes. Ubique veritus ea eam.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="images-row">
+                <div class="image">
+                  <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+                </div>
+                <div class="image">
+                  <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+                </div>
+                <div class="image">
+                  <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+                </div>
+                <div class="image">
+                  <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

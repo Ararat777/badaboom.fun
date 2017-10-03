@@ -21,10 +21,6 @@
 body{
   
   font-family: "Segoe UI", sans-serif;
-  .container-fluid{
-    width: 90%;
-    
-  }
 }
 
 header{
@@ -242,7 +238,7 @@ header{
 #main{
   position: relative;
   overflow: auto;
-  padding-top: 100px;
+  padding-top: 60px;
   .face-slider{
     .owl-item{
       padding: 15px;
@@ -280,11 +276,37 @@ header{
     }
     .images-row{
       width: 100%;
-      text-align: center;
       
       .image{
-        display: inline-block;
-        cursor: pointer;
+        width: 25%;
+        float: left;
+        padding: 0 2px;
+      }
+    }
+    .about{
+      margin-top: 25px;
+      margin-bottom: 40px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-image: linear-gradient(to right,#fff,#a2428a,#85519b,#6966b0,#4691d5,#fff);
+      border-width: 1px 0 1px 0;
+      border-style: solid;
+      border-image-slice: 1;
+      .about-title{
+        font-size: 36px;
+        font-weight: 700;
+        background-image: linear-gradient(to bottom right,#a2428a,#85519b,#6966b0,#4691d5);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        margin-bottom: 15px;
+        
+      }
+      .about-project{
+        font-family: "Segoe UI Semilight" sans-serif;
+        font-size: 18px;
+        margin: 0;
+        font-weight: 300;
       }
     }
     
@@ -300,8 +322,8 @@ header{
         height: 100%;
       }
     }
-    padding: 40px 20px 80px 20px;
-    margin-top: 50px;
+    padding: 50px 20px 140px 20px;
+    margin-top: 20px;
   }
 }
 footer{
@@ -333,5 +355,11 @@ footer{
         align-items: center;
         margin-top: 20px;
       }
+    }
+}
+
+@media (min-width: 1300px) {
+    .container{
+        width: 1300px;
     }
 }

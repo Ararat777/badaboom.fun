@@ -36,7 +36,7 @@ $(document).ready(function(){
         nav: true,
         navText: " ",
         loop: true,
-        margin: 80,
+        margin: 100,
         autoplay: true,
         autoplayHoverPause: true,
         fluidSpeed: 900,
