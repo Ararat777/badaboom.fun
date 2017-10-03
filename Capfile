@@ -1,11 +1,12 @@
-require 'capistrano/rails'
-require 'capistrano/passenger'
+
 # Load DSL and set up stages
 require "capistrano/setup"
 
 # Include default deployment tasks
 require "capistrano/deploy"
 require 'capistrano/rbenv'
+require 'capistrano/rails'
+require 'capistrano/passenger'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.4.1'
 # Load the SCM plugin appropriate to your project:
