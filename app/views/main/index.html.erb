@@ -1,0 +1,156 @@
+<header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="logo">
+          <%= image_tag "/assets/logo.png", class: "img-fluid" %>
+        </div>
+      </div>
+    </div>
+    <div class="row header-items">
+      <div class="col-md-4">
+        <div class="left-items">
+          <div class="clock-box">
+            <%= image_tag "/assets/icon_clock.png" %>
+          </div>
+          <div class="date-box">
+            <span class="countdown"><span class="d">25</span><span class="h">18</span>:<span class="m">18</span>:<span class="s">18</span></span>
+            <div class="dhms"><span class="d">days</span><span class="h">hours</span><span class="m">minutes</span><span class="s">seconds</span></div>
+          </div>
+          <div class="subscription-box">
+            <span class="subscription">Subscription:</span>
+            <div class="input-link-box">
+              <div class="input-link">
+                <%= form_for :mails,url: '#' do |f| %>
+                <div class="inputs">
+                  <%= f.text_field :mail %>
+                  <%= f.button "Send Invite" %>
+                </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <div class="bounty">
+            <span>Bounty</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="phone-wrap">
+          <div class="slider-wrap">
+            <div class="phone-slider owl-carousel">
+              <%= image_tag "/assets/slide_phone_start.jpg" %>
+              <%= image_tag "/assets/slide_phone_account.jpg" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="right-items">
+          <div class="like-box">
+            <%= image_tag "/assets/btn_like_off.png" %>
+            <span class="phrase">Believe in US</span>
+            <span class="likes-count">10 000+</span>
+          </div>
+          <div class="social-box">
+            <span class="social-network">Social networks:</span>
+            <div class="social-icons">
+              <%= image_tag "/assets/btm_t_off.png" %>
+              <%= image_tag "/assets/btm_f_off.png" %>
+              <%= image_tag "/assets/btm_g_off.png" %>
+              <%= image_tag "/assets/btm_v_off.png" %>
+            </div>
+          </div>
+          <div class="ico">
+            <span>ICO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div class="download-app-box">
+          <span>or download from</span>
+          <div class="row download-app">
+            <div class="col-md-6">
+              <%= image_tag "/assets/btn_stor.png", class: 'img-fluid' %>
+            </div>
+            <div class="col-md-6">
+              <%= image_tag "/assets/btn_android.png", class: 'img-fluid' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="face-slider owl-carousel">
+          <%= image_tag "/assets/joly.png", :data => {:title => "Lorem ipsulum dolor", :description => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", :name => "Angelina Joly"} %>
+          <%= image_tag "/assets/joly.png", :data => {:title => "New providence is the greate UI kit", :description => "Just then head struck against the roof of the hall: in fact she was now more than nine feet high.", :name => "Angelina Joly"} %>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-box">
+      <div class="gallery-bg">
+        <%= image_tag "/assets/gallery_bg.png", class: 'img-fluid' %>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center author-text">
+          <span class="title"></span>
+          <p class="description"></p>
+          <span class="name"></span>
+        </div>
+      </div>
+      <div class="images-row">
+        <div class="image">
+          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+        </div>
+        <div class="image">
+          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+        </div>
+        <div class="image">
+          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+        </div>
+        <div class="image">
+          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+        </div>
+        <div class="image">
+          <a href="/gallery"><%= image_tag "/assets/landscape.jpg", class: 'img-fluid' %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="logo">
+              <%= image_tag "/assets/logo.png", class: "img-fluid" %>
+            </div>
+            <div class="footer-text">
+              Our promise to you is responsive communication and transparency. When you call or e-mail us, we respond right away and explain all clearly.
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-2">
+            <div class="social-box">
+            <span class="social-network">Follow us:</span>
+            <div class="social-icons">
+              <%= image_tag "/assets/btm_t_off.png" %>
+              <%= image_tag "/assets/btm_f_off.png" %>
+              <%= image_tag "/assets/btm_g_off.png" %>
+              <%= image_tag "/assets/btm_v_off.png" %>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

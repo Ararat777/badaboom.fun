@@ -1,0 +1,337 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *= require owl.carousel.min
+ *= require owl.theme.default.min
+ *= require blueimp-gallery-all
+ */
+@import "bootstrap";
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  
+  font-family: "Segoe UI", sans-serif;
+  .container-fluid{
+    width: 90%;
+    
+  }
+}
+
+header{
+  width: 100%;
+  padding-bottom: 70px;
+  padding-top: 20px;
+  background-image: linear-gradient(to bottom right,#a2428a,#85519b,#6966b0,#4691d5);
+  .header-items{
+    margin-top: 30px;
+  }
+  .phone-wrap{
+    width: 100%;
+    background: url("/assets/top_view.png") no-repeat center;
+    background-size: contain;
+    padding-top: 82px;
+    height: 690px;
+    .slider-wrap{
+      width: 253.5px;
+      margin: 0 auto;
+    }
+  }
+  .left-items{
+    .clock-box{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    .date-box{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .countdown{
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 50px;
+        color: white;
+        
+        font-style: normal;
+        .d{
+          margin-right: 23px;
+        }
+        .h{
+          margin-right: 5px;
+        }
+        .m{
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        .s{
+          margin-left: 5px;
+        }
+      }
+      .dhms{
+        width: 350px;
+        font-size: 18px;
+        line-height: 100%;
+        
+        color: white;
+        margin-top: 2px;
+        .d{
+          margin-left: 10px;
+        }
+        .h{
+          margin-left: 55px;
+        }
+        .m{
+          margin-left: 47px;
+        }
+        .s{
+          margin-left: 27px;
+        }
+      }
+    }
+    .subscription-box{
+      position: relative;
+      margin-top: 50px;
+      width: 100%;
+      .subscription{
+        font-size: 42px;
+        
+        color: white;
+        
+      }
+      .input-link-box{
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+        .input-link{
+          width: 100%;
+          height: 50px;
+          border: 1px solid rgba(255,255,255,0.5);
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          .inputs{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+              width: 50%;
+              height: 28px;
+              margin-left: 20px;
+              background: transparent;
+              border: 2px solid white;
+              color: white;
+              font-size: 16px;
+              padding: 2px;
+              padding-left: 5px;
+              outline: none;
+            }
+            button{
+              padding: 10px;
+              background-color: chartreuse;
+              color: white;
+              border-radius: 50px;
+              border: none;
+              margin-right: 2px;
+              cursor: pointer;
+            }
+          }
+          form{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .bounty{
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+      span{
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .right-items{
+    .like-box{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      flex-direction: column;
+      .phrase{
+        font-size: 42px;
+        font-weight: normal;
+        margin-top: 20px;
+        color: white;
+        line-height: 100%;
+      }
+      .likes-count{
+        font-size: 60px;
+        font-weight: bold;
+        color: white;
+        line-height: 100%;
+      }
+    }
+    .social-box{
+      text-align: center;
+      margin-top: 50px;
+      span{
+        font-size: 42px;
+        color: white;
+        font-weight: normal;
+        line-height: 100%;
+        text-align: center;
+      }
+      .social-icons{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+      }
+    }
+    .ico{
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+      span{
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .download-app-box{
+    width: 100%;
+    text-align: center;
+    .download-app{
+      margin-top: 20px;
+    }
+    span{
+      font-size: 14px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 10px;
+    }
+  }
+}
+#main{
+  position: relative;
+  overflow: auto;
+  padding-top: 100px;
+  .face-slider{
+    .owl-item{
+      padding: 15px;
+    }
+    .center{
+      padding: 0;
+    }
+  }
+  .gallery-box{
+    max-width: 1253px;
+    position: relative;
+    .title{
+      font-family: "Segoe UI Semilight" sans-serif;
+      font-size: 32px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .description{
+      font-family: "Segoe UI Semilight" sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 20px;
+      color: gray;
+      margin-bottom: 30px;
+      min-height: 80px;
+    }
+    .name{
+      font-size: 12px;
+      font-family: "Segoe UI Semilight" sans-serif;
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+    .images-row{
+      width: 100%;
+      text-align: center;
+      
+      .image{
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+    
+    .gallery-bg{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    padding: 40px 20px 80px 20px;
+    margin-top: 50px;
+  }
+}
+footer{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(to right,#a2428a,#85519b,#6966b0,#4691d5);
+  .logo{
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  .footer-text{
+    font-size: 14px;
+    color: white;
+  }
+  .social-box{
+      span{
+        font-size: 14px;
+        color: white;
+        font-weight: normal;
+       
+      }
+      .social-icons{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+    }
+}
