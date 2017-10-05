@@ -31,12 +31,16 @@ $(document).ready(function(){
         dotsSpeed: 100,
         dragEndSpeed: 900
     });
+  var faceSliderMargin = 100;
+  if($(window).width() < 576){
+    faceSliderMargin = 50;
+  }
   $(".face-slider.owl-carousel").owlCarousel({
         items: 3,
         nav: true,
         navText: " ",
         loop: true,
-        margin: 100,
+        margin: faceSliderMargin,
         autoplay: true,
         autoplayHoverPause: true,
         fluidSpeed: 900,
