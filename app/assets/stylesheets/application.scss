@@ -168,6 +168,9 @@ header{
   }
   .right-items{
     .like-box{
+      .like{
+          cursor: pointer;
+        }
       position: relative;
       width: 100%;
       display: flex;
@@ -430,6 +433,7 @@ footer{
     }
     .right-items{
       .like-box{
+        
         padding-top: 30px;
         img{
           width: 90px;
@@ -632,6 +636,7 @@ footer{
     .right-items{
       .like-box{
         padding-top: 0;
+        
       }
       .social-box{
         margin-top: 30px;

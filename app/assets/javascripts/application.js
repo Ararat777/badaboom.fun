@@ -70,6 +70,10 @@ $(document).ready(function(){
     
     $('.author-text').fadeIn();
   });
+  $('.like').on("click",function(){
+    var likesCount = parseInt($('.likes-count').text());
+    $('.likes-count').html(likesCount + 1);
+  })
   
 
 })
