@@ -1,4 +1,20 @@
-<div class="gallery">
+<div id="gallery-page">
+  <div class="container">
+ <div class="row">
+    <div class="col-md-6 offset-md-3">
+     <div class="gallery-top">
+       <%= link_to root_url do %>
+       <h2 class="title">
+        BadaBoom
+       </h2>
+       <% end %>
+      <span>Gallery</span>
+     </div>
+    </div>
+ </div>
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <div class="gallery">
         <div id="blueimp-gallery" class="blueimp-gallery">
             <div class="slides"></div>
             <h3 class="title"></h3>
@@ -65,6 +81,12 @@
             </a>
           </div>
       </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
 <script>
   document.getElementById('links').onclick = function (event) {
   event = event || window.event;

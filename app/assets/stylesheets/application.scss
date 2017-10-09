@@ -22,6 +22,36 @@ body{
   
   font-family: "Segoe UI", sans-serif;
 }
+#gallery-page{
+  .gallery-top{
+    a{
+      text-decoration: none;
+    }
+    text-align: center;
+    .title{
+      font-size: 60px;
+      font-weight: 700;
+      background-image: linear-gradient(to bottom right,#a2428a,#85519b,#6966b0,#4691d5);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    span{
+      font-size: 42px;
+      font-weight: 300;
+    }
+  }
+  .gallery{
+  text-align: center;
+  #links{
+    a{
+      img{
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+}
 
 header{
   width: 100%;
@@ -40,6 +70,26 @@ header{
     .slider-wrap{
       width: 253.5px;
       margin: 0 auto;
+      .phone-slider{
+        position: relative;
+        .owl-prev,.owl-next{
+          position: absolute;
+          top: 45%;
+          width: 15px;
+          height: 15px;
+          color: #000;
+          display: block;
+          opacity: 0.7;
+          background: url('/assets/slider_right.png') no-repeat center;
+        }
+        .owl-prev{
+          left: -20%;
+          transform: rotate(180deg);
+        }
+        .owl-next{
+          right: -20%;
+        }
+      }
     }
   }
   .left-items{
@@ -249,6 +299,23 @@ header{
     .center{
       padding: 0;
     }
+    .owl-prev,.owl-next{
+          position: absolute;
+          top: calc(50% - 15px);
+          width: 30px;
+          height: 30px;
+          color: #000;
+          display: block;
+          opacity: 0.7;
+        }
+        .owl-prev{
+          left: -15%;
+          background: url(/assets/arrow_left.png) no-repeat center;
+        }
+        .owl-next{
+          right: -15%;
+          background: url(/assets/arrow_right.png) no-repeat center;
+        }
   }
   .gallery-box{
     width: 100%;
