@@ -290,7 +290,7 @@ header{
 }
 #main{
   position: relative;
-  overflow: auto;
+  
   padding-top: 60px;
   .face-slider{
     .owl-item{
@@ -383,7 +383,46 @@ header{
     padding: 30px 0 40px 0;
     margin-top: 40px;
     box-shadow: 0 30px 40px 5px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+  }
+  .app-title{
+    text-align: center;
     margin-bottom: 50px;
+    h2{
+      font-size: 42px;
+      font-family: "Segoe UI Semibold", sans-serif;
+      margin-bottom: 20px;
+    }
+    .line{
+      height: 4px;
+      width: 55px;
+      background: blue;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+    span{
+      font-size: 14px;
+      color: rgba(0,0,0,0.5);
+      text-transform: uppercase;
+    }
+  }
+  .interface-images{
+    margin-bottom: 30px;
+    .center-app-image{
+      .bg-phone{
+        position: absolute;
+        left: -14.5%;
+        top:-18%;
+        bottom: -35%;
+        right: -14.5%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
 }
 footer{
